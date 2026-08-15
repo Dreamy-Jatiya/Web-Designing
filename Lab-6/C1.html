@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab-6C</title>
+    <link rel="stylesheet" href="lab-6C.css">
+</head>
+<body>
+    <div class="main">
+        <div class="content">
+            <div class="header">Create Account</div>
+
+            <div class="form" style="color: rgb(89, 189, 168);">
+                <form method="post">
+        <table cellpadding="8px">
+            <tr>
+                <td colspan="2"><h1></h1></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fn">First name*</label><br>
+                    <input type="text" placeholder="enter your first name" id="fn" required>
+                </td>
+                <td>
+                    <label for="ln">Last Name</label><br>
+                    <input type="text" placeholder="enter your last name" id="ln">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="email">Email*</label><br>
+                    <input type="email" width="100" placeholder="enter your email" aria-colspan="" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pass">Password*</label><br>
+                    <input type="text" placeholder="enter your Password" id="pass" required>
+                </td>
+                <td>
+                    <label for="cp">Confirm Password*</label><br>
+                    <input type="text" placeholder="enter your Password again" id="cp" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gn">Gender</label><br>
+                    <input type="radio" name="gn" id="male"><label for="male" style="color: black;" class="deff">Male</label>
+                    <input type="radio" name="gn" id="female"><label for="female" style="color: black;" class="deff">Female</label>
+                </td>
+                <td>
+                    <label for="hobby">Hobbies</label><br>
+                    <input type="checkbox" name="h1" id="h1"><label for="h1" style="color: black;" class="deff">Music</label>
+                    <input type="checkbox" name="h2" id="h2"><label for="h2" style="color: black;" class="deff">Sport</label>
+                    <input type="checkbox" name="h3" id="h2"><label for="h3" style="color: black;" class="deff">Travel</label>
+                    <input type="checkbox" name="h4" id="h4"><label for="h4" style="color: black;" class="deff">Movies</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="si">Source of Income</label><br>
+                    <select>
+                        <option>Employed</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </td>
+                <td>
+                    <label for="ic">Income</label><br>
+                    <input type="range" min="0" max="20K" value="1" required> <input type="button" value="20K">
+                </td>               
+            </tr>
+            <tr>
+                <td>
+                    <label for="up">Upload Profile Picture</label><br>
+                    <input type="file" id="up" required style="color: black;">
+                </td>
+                <td>
+                    <label for="age">Age</label><br>
+                    <input type="number" value="18" id="age" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="bio">Bio</label><br>
+                    <textarea name="bio" id="bio" rows="5" cols="70"></textarea>
+                </td>
+            </tr>
+        </table>
+    </form>
+            </div><!--form-->
+
+        <div class="footer">
+            <input type="submit" id="submit" value="Create" required>
+        </div><!--footer-->
+
+        </div><!--Content-->
+    </div><!--main-->
+</body>
+</html>

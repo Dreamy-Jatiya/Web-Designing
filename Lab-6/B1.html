@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab-6B</title>
+</head>
+<body>
+    <form method="post">
+        <table align="Center" cellspacing="20">
+            <center><h1>Employee Registration</h1></center>
+            <tr>
+                <td colspan="4" align="center"><b>Personal Information</b></td>
+            </tr>
+            <tr>
+                <td><label for="eid">Employee Id</label></td>
+                <td>: <input type="text" placeholder="Enter Employee Id" id="eid" required></td>
+                <td><label for="en">Employee Name</label></td>
+                <td>: <input type="text" placeholder="Enter Employee name" id="en" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td>: <input type="email" placeholder="Enter Email" id="email" required></td>
+                <td><label for="cn">Contact No.</label></td>
+                <td>: <input type="tel" placeholder="Enter Contact No." id="cn" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Marital Status</label></td>
+                <td>: <input type="radio" name="gender" id="single"><label for="single">Single</label>
+                    <input type="radio" name="gender" id="married"><label for="married">Married</label></td>
+            </tr>
+            <tr>
+                <td colspan="4" align="center"><b>Education Qualification</b></td>
+            </tr>
+            <tr>
+                <td><label for="ed">Education</label></td>
+                <td>: <input type="text" placeholder="Enter Education details" id="ed" required></td>
+                <td><label for="ex">Experience</label></td>
+                <td>: <input type="text" placeholder="Enter Experience details" id="ex" required></td>
+            </tr>
+            <tr>
+                <td colspan="4" align="center"><b>Job Details</b></td>
+            </tr>
+             <tr>
+                <td><label for="dg">Designation</label></td>
+                <td>: <input type="text" placeholder="Enter Designation details" id="dg" required></td>
+                <td><label for="jl">Job Location</label></td>
+                <td>: <input type="text" placeholder="Enter Job Location" id="jl" required></td>
+            </tr>
+            <tr>
+                <td><label for="salary">Salary</label></td>
+                <td>: <input type="text" placeholder="Enter Salary details" id="salary" required></td>
+            </tr>
+        </table>
+        <table align="center">
+            <hr>
+            <tr>
+                <td colspan="4" align="center"><input type="submit" value="Register"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
