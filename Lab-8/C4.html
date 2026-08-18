@@ -1,0 +1,57 @@
+<!--4. Design a registration form that uses type="email", type="number" and pattern attributes to validate 
+email format, number ranges, and custom patterns (e.g., password rules). (B) 
+Create a feedback form where minlength, maxlength, min, and max attributes are used to control       
+input length and numerical value range. (C) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program-5</title>
+</head>
+<body>
+    <form>
+        <table align="center">
+            <caption><h2>Registration Form</h2></caption>
+            <tr>
+                <td><label for="fname">Full Name</label></td>
+                <td><input type="text" id="fname" placeholder="enter a name" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">email</label></td>
+                <td><input type="text" id="email" placeholder="enter a email" required></td> 
+            </tr>
+
+            <tr>
+                <td><label for="phone">Phone No.</label></td>
+                <td><input type="number" id="phone" placeholder="enter phone no." required></td>
+            </tr>
+
+            <tr>
+                <td><label>Date</label></td>
+                <td><input type="date"></td>
+            </tr>
+
+            <tr><td><label for="add">Address</label></td>
+                <td><input type="text" id="add" placeholder="enter address" required></td>
+            </tr>
+
+            <tr>
+                <td><label>Feedback</label></td>
+                <td><textarea minlength="10" maxlength="20" required></textarea></td>
+            </tr>
+
+            <tr>
+                <td>Rating(1-5)</td>
+                <td><input type="number" min="1" max="5" title="invalid" required></td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" value="SUBMIT"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

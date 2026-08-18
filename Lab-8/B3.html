@@ -1,0 +1,37 @@
+<!--3. Create an HTML form with fields like Name, Email, and Phone Number using the required 
+attribute to ensure the user cannot submit without filling them. (B) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program-4</title>
+</head>
+<body>
+    <form>
+        <table>
+              <table align="center">
+            <caption><h1>Registration Form</h1></caption>
+        <tr>
+            <td><label for="email">email</label></td>
+            <td><input type="text" id="email" placeholder="enter a email" required></td> 
+        </tr>
+
+        <tr>
+            <td><label>Age</label></td>
+            <td><input type="number" min="18" max="60" required></td>
+        </tr>
+
+        <tr>
+            <td><label>Password</label></td>
+            <td><input type="password" pattern="[A-Z][a-z][!,@,#,$,%,&,*][0-9]{2,}" title="Must contain 1 uppercase,1 lowercase,1 special case,2 numbers"></td>
+        </tr>
+
+        <tr>
+             <td><input type="submit" value="SUBMIT"></td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
