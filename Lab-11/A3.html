@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background: #f3f3f3;
+      }
+
+      /* Navbar */
+
+      header {
+        width: 100%;
+        background: #b26cff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 80px;
+      }
+
+      .logo {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        margin-left: 30px;
+        font-size: 17px;
+      }
+
+      .btn {
+        background: #7d2ae8;
+        padding: 10px 20px;
+        border-radius: 25px;
+      }
+
+      /* Hero */
+
+      .hero {
+        background: white;
+        padding: 50px 80px;
+      }
+
+      .hero-text {
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        font-size: 42px;
+        width: 70%;
+        margin: auto;
+        line-height: 1.4;
+      }
+
+      .hero-text span {
+        color: #7d2ae8;
+      }
+
+      /* Hero Content */
+
+      .hero-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        gap: 50px;
+      }
+
+      .card {
+        width: 180px;
+        background: #8b2cf5;
+        color: white;
+        padding: 20px;
+        border-radius: 40px;
+        text-align: center;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .image-box img {
+        width: 280px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 150px;
+        border: 8px solid #ddd;
+      }
+
+      /* Brand */
+
+      .brands {
+        background: #181d46;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+      }
+
+      /* About */
+
+      .about {
+        background: linear-gradient(90deg, #b57cff, #d6a6ff);
+        display: flex;
+        justify-content: space-between;
+        padding: 70px;
+        color: white;
+      }
+
+      .about-left h1 {
+        font-size: 70px;
+      }
+
+      .about-right {
+        width: 60%;
+      }
+
+      .about-right p {
+        font-size: 20px;
+        line-height: 1.8;
+      }
+
+      .stats {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+      }
+
+      .box {
+        width: 180px;
+        background: #8b2cf5;
+        padding: 25px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .box h2 {
+        font-size: 40px;
+      }
+
+      .box p {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div class="logo">Alea</div>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#" class="btn">Let's Talk</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>
+          I'm <span>Alea.</span> I will create a web design that can give value
+          to your company
+        </h1>
+      </div>
+
+      <div class="hero-content">
+        <div class="card left">
+          <h3>UI/UX Designer</h3>
+          <p>4 Years</p>
+        </div>
+
+        <div class="image-box">
+          <img
+            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400"
+            alt="Profile"
+          />
+        </div>
+
+        <div class="card right">
+          <h3>Web Developer</h3>
+          <p>2 Years</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Section -->
+    <section class="brands">
+      <h3>Dribbble</h3>
+      <h3>LinkedIn</h3>
+      <h3>Medium</h3>
+      <h3>Behance</h3>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+      <div class="about-left">
+        <h1>About<br />Me.</h1>
+      </div>
+
+      <div class="about-right">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam,
+          nemo! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+
+        <div class="stats">
+          <div class="box">
+            <h2>4K</h2>
+            <p>Projects Done</p>
+          </div>
+
+          <div class="box">
+            <h2>2K</h2>
+            <p>Happy Clients</p>
+          </div>
+
+          <div class="box">
+            <h2>9K</h2>
+            <p>Clients Worldwide</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
