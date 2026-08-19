@@ -1,0 +1,48 @@
+<!--2. Design a webpage that applies common styles to multiple elements using the group selector (h1, 
+p), universal selector (*), and descendant selector (div p). (B) -->
+
+<!doctype html>
+<html>
+  <head>
+    <title>Group, Universal and Descendant Selectors</title>
+
+    <style>
+      /* Universal Selector */
+      * {
+        font-family: Arial, sans-serif;
+        margin: 10px;
+      }
+
+      /* Group Selector */
+      h1,
+      p {
+        color: navy;
+      }
+
+      /* Descendant Selector */
+      div p {
+        background-color: lightyellow;
+        border: 1px solid black;
+        padding: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>CSS Selectors Example</h1>
+    <p>This paragraph is styled using the group selector.</p>
+
+    <div>
+      <p>
+        This paragraph is inside a div and is styled using the descendant
+        selector.
+      </p>
+    </div>
+
+    <section>
+      <p>
+        This paragraph is outside the div, so only the group selector applies.
+      </p>
+    </section>
+  </body>
+</html>
