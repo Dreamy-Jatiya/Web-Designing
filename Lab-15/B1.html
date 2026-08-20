@@ -1,0 +1,109 @@
+<!--  1. Using the :hover pseudo-class to change the appearance of links when hovered over,but limited to links within a specific container. 
+      2. Applying styles to input fields when they receive focus using the :focus pseudo-class. 
+      3. Utilize the :hover pseudo-class to highlight table rows when hovered over. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:nth-child(even){
+            background-color: plum;
+        }
+        li:nth-child(odd){
+            background-color: rgb(231,106,231);
+        }
+        ul:hover{
+            list-style-type:lower-roman ;
+        }
+        ol:hover{
+            list-style-type: upper-latin;
+        }
+        form{
+            background: linear-gradient(45deg,rgb(238, 137, 153),lightpink);
+        }
+        input:hover{
+            background-color: rgb(160,236,232);
+        }
+        table{
+            text-align: center;
+        }
+        td:hover{
+            background: linear-gradient(pink,yellow);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <h2>Members of ChillMaaroYaarrrr</h2>
+        <li>Dreamy</li>
+        <li>Lency</li>
+        <li>Ruchita</li>
+        <li>Kinjal</li>
+    </ul>
+
+    <ol>
+        <h2>Nickname</h2>
+        <li>Dreamy</li>
+        <li>Lenskart</li>
+        <li>Ruchi</li>
+        <li>Kinjal Dave</li>
+    </ol>
+
+    <form>
+        <fieldset>
+       <table> 
+        <tbody>
+        
+            <legend>Form of ChillMaaroYaarrrr</legend>
+            <tr>
+                <label>User name</label>
+                <input type="text" required>
+            </tr>
+            <tr>
+                <td>
+                <label>Password</label>
+                <input type="password" pattern="[a,z][A,Z][0,9]{5}" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <label>Followers</label>
+                <input type="number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <label>Following</label>
+                <input type="number">
+                </td>
+            </tr>
+             
+    </tbody>
+    </table>
+        
+    </fieldset>
+    </form>
+
+    <table align="center" border="2px" height="400px" width="900px">
+        <tr>
+            <td>Reels</td>
+            <td>Post</td>
+            <td>Professional post</td>
+        </tr>
+        <tr>
+            <td>Reels</td>
+            <td>Post</td>
+            <td>Professional post</td>
+        </tr>
+        <tr>
+            <td>Reels</td>
+            <td>Post</td>
+            <td>Professional post</td>
+        </tr>
+    </table>
+</body>
+</html>

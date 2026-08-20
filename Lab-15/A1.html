@@ -1,0 +1,66 @@
+<!--  1. Link after visited red color before visited orange color 
+      2. Add special style(change color, font size etc.) to first line of paragraph 
+      3. Add special style (change color, font size etc.) to first letter of paragraph 
+      4. Change background color to yellow when user select particular text 
+      5. Add special style to an element when user mouse over it.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: greenyellow;
+        }
+        a{
+            font-size: 60px;
+            text-align: center;
+        }
+        h2:hover{
+            transform: scale(1,1);
+            background:linear-gradient(pink,yellow);
+            font-size:50px;
+        }
+        p::first-line{
+            color: deeppink;
+            font-size:50px;
+        }
+        p::first-letter{
+            color: rgb(20, 37, 220);
+            font-size:50px;
+            font-weight: bolder;
+        }
+        button:hover{
+            background-color: yellow;
+        }
+        p::before{
+            content:"Hello Everybody";
+        }
+        p::after{
+            content:"Byye Guys";
+        }
+        p::selection{
+            background-color:yellow;
+        }
+        p:hover{
+            color: darkorange;
+            transform: scale(1,1);
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome to ChillMaaroYaarrrr</h2>
+    <a href="https://www.youtube.com/">Link</a>
+
+    <h1><p>Friendship is one of the most beautiful bonds in life, built on trust, understanding, and mutual respect.
+     <br>A true friend is someone who stands by you in both good and bad times, offering support, encouragement, and
+     comfort.<br></p></h1>
+    
+</body>
+</html>
