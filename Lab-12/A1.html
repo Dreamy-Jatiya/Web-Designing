@@ -1,0 +1,67 @@
+<!--Part: A 
+1. Changing the background color of the div from red to yellow. 
+2. Moving div from Left to right, right to bottom, bottom to left, and left to top. 
+3. Put a delay of 2s in the animation. 
+4. Change the animation-iteration count property of the program to run infinitely. 
+5. Change the animation direction property to run it in reverse order. 
+6. Change the value of the animation-timing-function property to change the speed of the 
+animation -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .animation{
+            height: 20vh;
+            width: 20vh;
+            
+            background-color:deeppink;
+            animation-name: Animation;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-direction: reverse;
+            animation-timing-function: ease-in;
+            
+        }
+        @keyframes Animation {
+            from{
+                background-color: deeppink;
+            }
+            to{
+                background-color: yellow;
+            }
+            0%{
+                margin-left: 0px;
+                margin-top: 0px;
+            }
+            25%{
+                margin-left: 800px;
+                margin-top: 0px;
+                border-radius: 90%;
+            }
+            50%{
+                margin-left: 800px;
+                margin-top: 500px;
+            }
+            75%{
+                margin-left: 0%;
+                margin-top: 500px;
+            }
+            100%{
+                margin-left: 0px;
+                margin-top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animation" >
+
+    </div>
+</body>
+</html>
