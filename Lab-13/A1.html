@@ -1,0 +1,79 @@
+<!--Apply Media Queries on Practical No-10 and make it responsive.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .sidebar{
+            background-color:cornflowerblue;
+            height:30vh;
+            width:40%;
+            float:right;
+            margin-right:20px;
+        }
+
+        @media screen and (min-width:500px){
+            .sidebar{
+                animation-name: Sidebar;
+                animation-duration: 2s;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        }
+
+        @keyframes Sidebar{
+            from{
+                background-color:cornflowerblue;
+                border: 5px double black;
+                color:red ;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            to{
+                background: linear-gradient(pink,red);
+                border: 5px groove brown;
+                color: deeppink;
+                font-family: 'Courier New', Courier, monospace;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color:aqua;height:90vh">
+        Page
+
+        <div  style="background-color:crimson;height:6vh;width:96%;margin-left:22px;">
+            header
+        </div>
+        <div  style="background-color:chocolate;height:70vh;width:96%;margin-left:22px;">
+            Content
+            <br>
+            <br>
+        <div style="float:left;margin-left:20px;">
+            <div style="background-color:cornsilk;height:8vh;width:50vw;">
+                Entry
+            </div>
+            <br>
+            <div style="background-color:cornsilk;height:8vh;width:50vw;">
+                Entry
+            </div>
+            <br>
+            <div style="background-color:cornsilk;height:8vh;width:50vw;">
+                Entry
+            </div>
+        </div>
+            <div class="sidebar">
+                Sidebar
+            </div>
+            </div>
+        <div style="background-color:blue;height:6vh;width:96%;margin-left:22px;">
+            &copy; Darshan University-Rajkot
+        </div>
+    </div>
+</body>
+</html>
