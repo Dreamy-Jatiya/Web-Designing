@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background{
+            height: 1000px;
+            width: 800px;
+            background-color:rgb(234, 239, 239);
+            margin-left: 200px;
+            padding: 30px;
+        }
+        .row1{
+            height: 200px;
+            width: 700px;
+            margin-left: 50px;
+        }
+        .A1{
+            height: 170px;
+            width: 100px;
+            display: inline-block;
+            border: 1pt solid gery;
+            box-shadow: 0px 0px 10px;
+            border-radius: 10px;
+        }
+        .a{
+            height: 120px;
+            width: 100px;
+            background-image:linear-gradient(-45deg,rgba(246, 138, 132),rgba(250, 212, 139)) ;
+            border-radius: 10px;
+            border: 1pt solid gery;
+            box-shadow: 0px 0px 10px;
+        }
+        .a1{
+            height: 50px;
+            width: 100px;
+            background-color:white;
+            border-radius: 10px;
+            text-align: center;
+            border: 1pt solid gery;
+            box-shadow: 0px 0px 10px;
+        }
+        .A2{
+           height: 170px;
+            width: 100px; 
+            display: inline-block;
+            margin-left: 40px;
+        }
+        .b{
+            height: 120px;
+            width: 100px;
+            background-image:linear-gradient(-45deg,rgba(246, 138, 132),rgba(250, 212, 139)) ;
+            border-radius: 10px;
+            margin-top: 18px;
+        }
+        .b1{
+            height: 50px;
+            width: 100px;
+            background-color:white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .A3{
+            height: 170px;
+            width: 100px; 
+            display: inline-block;
+            margin-left: 40px;
+        }
+        .c{
+            height: 120px;
+            width: 100px;
+            background-image:linear-gradient(-45deg,rgba(246, 138, 132),rgba(250, 212, 139)) ;
+            border-radius: 10px;
+            margin-top: 18px;
+        }
+        .c1{
+             height: 50px;
+            width: 100px;
+            background-color:white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .A4{
+            height: 170px;
+            width: 100px; 
+            display: inline-block;
+            margin-left: 40px;
+        }
+        .d{
+            height: 120px;
+            width: 100px;
+            background-image:linear-gradient(-45deg,rgba(246, 138, 132),rgba(250, 212, 139)) ;
+            border-radius: 10px;
+            margin-top: 18px;
+        }
+        .d1{
+             height: 50px;
+            width: 100px;
+            background-color:white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .A5{
+            height: 170px;
+            width: 100px; 
+            display: inline-block;
+            margin-left: 40px;
+        }
+        .e{
+            height: 120px;
+            width: 100px;
+            background-image:linear-gradient(-45deg,rgba(246, 138, 132),rgba(250, 212, 139)) ;
+            border-radius: 10px;
+            margin-top: 18px;
+        }
+        .e1{
+             height: 50px;
+            width: 100px;
+            background-color:white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .row2{
+            height: 200px;
+            width: 700px;
+            margin-top: 50px;
+            margin-left: 48px;
+        }
+        .B1{
+            height: 170px;
+            width: 100px; 
+            display: inline-block;
+        }
+        .f{
+            height: 120px;
+            width: 100px;
+            background-image:linear-gradient(-45deg,rgba(246, 138, 132),rgba(250, 212, 139)) ;
+            border-radius: 10px;
+            margin-top: 18px;
+        }
+        .f1{
+             height: 50px;
+            width: 100px;
+            background-color:white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .B2{
+            height: 170px;
+            width: 100px; 
+            display: inline-block;
+            margin-left: 40px;
+        }
+        .g{
+            height: 120px;
+            width: 100px;
+            background-image:linear-gradient(-45deg,rgba(246, 138, 132),rgba(250, 212, 139)) ;
+            border-radius: 10px;
+            margin-top: 18px;
+        }
+        .g1{
+             height: 50px;
+            width: 100px;
+            background-color:white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .B3{
+            height: 170px;
+            width: 100px; 
+            display: inline-block;
+            margin-left: 40px;
+        }
+        .h{
+            height: 120px;
+            width: 100px;
+            background-image:linear-gradient(-45deg,rgba(246, 138, 132),rgba(250, 212, 139)) ;
+            border-radius: 10px;
+            margin-top: 18px;
+        }
+        .h1{
+             height: 50px;
+            width: 100px;
+            background-color:white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .B4{
+            height: 170px;
+            width: 100px; 
+            display: inline-block;
+            margin-left: 40px;
+        }
+        .i{
+            height: 120px;
+            width: 100px;
+            background-image:linear-gradient(-45deg,rgba(246, 138, 132),rgba(250, 212, 139)) ;
+            border-radius: 10px;
+            margin-top: 18px;
+        }
+        .i1{
+             height: 50px;
+            width: 100px;
+            background-color:white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .B5{
+            height: 170px;
+            width: 100px; 
+            display: inline-block;
+            margin-left: 40px;
+        }
+        .j{
+            height: 120px;
+            width: 100px;
+            background-image:linear-gradient(-45deg,rgba(246, 138, 132),rgba(250, 212, 139)) ;
+            border-radius: 10px;
+            margin-top: 18px;
+        }
+        .j1{
+             height: 50px;
+            width: 100px;
+            background-color:white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .row3{
+            height: 200px;
+            width: 700px;
+            margin-top: 50px;
+            margin-left: 48px;
+        }
+        .C1{
+            height: 170px;
+            width: 100px; 
+            display: inline-block;
+        }
+        .k{
+            height: 120px;
+            width: 100px;
+            background-image:linear-gradient(-45deg,rgba(246, 138, 132),rgba(250, 212, 139)) ;
+            border-radius: 10px;
+            margin-top: 18px;
+        }
+        .k1{
+             height: 50px;
+            width: 100px;
+            background-color:white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .C2{
+            height: 170px;
+            width: 100px; 
+            display: inline-block;
+            margin-left: 40px;
+        }
+        .l{
+            height: 120px;
+            width: 100px;
+            background-image:linear-gradient(-45deg,rgba(246, 138, 132),rgba(250, 212, 139)) ;
+            border-radius: 10px;
+            margin-top: 18px;
+        }
+        .l1{
+             height: 50px;
+            width: 100px;
+            background-color:white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .C3{
+            height: 170px;
+            width: 100px; 
+            display: inline-block;
+            margin-left: 40px;
+        }
+        .m{
+            height: 120px;
+            width: 100px;
+            background-image:linear-gradient(-45deg,rgba(246, 138, 132),rgba(250, 212, 139)) ;
+            border-radius: 10px;
+            margin-top: 18px;
+        }
+        .m1{
+             height: 50px;
+            width: 100px;
+            background-color:white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .C4{
+            height: 170px;
+            width: 100px; 
+            display: inline-block;
+            margin-left: 40px;
+        }
+        .n{
+            height: 120px;
+            width: 100px;
+            background-image:linear-gradient(-45deg,rgba(246, 138, 132),rgba(250, 212, 139)) ;
+            border-radius: 10px;
+            margin-top: 18px;
+        }
+        .n1{
+             height: 50px;
+            width: 100px;
+            background-color:white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .C5{
+            height: 170px;
+            width: 100px; 
+            display: inline-block;
+            margin-left: 40px;
+        }
+        .o{
+            height: 120px;
+            width: 100px;
+            background-image:linear-gradient(-45deg,rgba(246, 138, 132),rgba(250, 212, 139)) ;
+            border-radius: 10px;
+            margin-top: 18px;
+        }
+        .o1{
+            height: 50px;
+            width: 100px;
+            background-color:white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .row4{
+            height: 200px;
+            width: 700px;
+            margin-top: 50px;
+            margin-left: 48px;
+        }
+        .D1{
+            height: 170px;
+            width: 100px; 
+            display: inline-block;
+        }
+        .p{
+            height: 120px;
+            width: 100px;
+            background-image:linear-gradient(-45deg,rgba(246, 138, 132),rgba(250, 212, 139)) ;
+            border-radius: 10px;
+            margin-top: 18px;
+        }
+        .p1{
+             height: 50px;
+            width: 100px;
+            background-color:white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .D2{
+            height: 170px;
+            width: 100px; 
+            display: inline-block;
+            margin-left: 40px;
+        }
+        .q{
+            height: 120px;
+            width: 100px;
+            background-image:linear-gradient(-45deg,rgba(246, 138, 132),rgba(250, 212, 139)) ;
+            border-radius: 10px;
+            margin-top: 18px;
+        }
+        .q1{
+             height: 50px;
+            width: 100px;
+            background-color:white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .D3{
+            height: 170px;
+            width: 100px; 
+            display: inline-block;
+            margin-left: 40px;
+        }
+        .r{
+            height: 120px;
+            width: 100px;
+            background-image:linear-gradient(-45deg,rgba(246, 138, 132),rgba(250, 212, 139)) ;
+            border-radius: 10px;
+            margin-top: 18px;
+        }
+        .r1{
+             height: 50px;
+            width: 100px;
+            background-color:white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .D4{
+            height: 170px;
+            width: 100px; 
+            display: inline-block;
+            margin-left: 40px;
+        }
+        .s{
+            height: 120px;
+            width: 100px;
+            background-image:linear-gradient(-45deg,rgba(246, 138, 132),rgba(250, 212, 139)) ;
+            border-radius: 10px;
+            margin-top: 18px;
+        }
+        .s1{
+             height: 50px;
+            width: 100px;
+            background-color:white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .D5{
+            height: 170px;
+            width: 100px; 
+            display: inline-block;
+            margin-left: 40px;
+        }
+        .t{
+            height: 120px;
+            width: 100px;
+            background-image:linear-gradient(-45deg,rgba(246, 138, 132),rgba(250, 212, 139)) ;
+            border-radius: 10px;
+            margin-top: 18px;
+        }
+        .t1{
+            height: 50px;
+            width: 100px;
+            background-color:white;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <!-- Row 1 -->
+        <div class="row1">
+            <div class="A1">
+                <div class="a"></div>
+                <div class="a1">FCE38A<br>F38181</div>
+            </div>
+            <div class="A2">
+                <div class="b"></div>
+                <div class="b1">FCE38A<br>F38181</div>
+            </div>
+            <div class="A3">
+                <div class="c"></div>
+                <div class="c1">FCE38A<br>F38181</div>
+            </div>
+            <div class="A4">
+                <div class="d"></div>
+                <div class="d1">FCE38A<br>F38181</div>
+            </div>
+            <div class="A5">
+                <div class="e"></div>
+                <div class="e1">FCE38A<br>F38181</div>
+            </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="row2">
+            <div class="B1">
+                <div class="f"></div>
+                <div class="f1">FCE38A<br>F38181</div>
+            </div>
+            <div class="B2">
+                <div class="g"></div>
+                <div class="g1">FCE38A<br>F38181</div>
+            </div>
+            <div class="B3">
+                <div class="h"></div>
+                <div class="h1">FCE38A<br>F38181</div>
+            </div>
+            <div class="B4">
+                <div class="i"></div>
+                <div class="i1">FCE38A<br>F38181</div>
+            </div>
+            <div class="B5">
+                <div class="j"></div>
+                <div class="j1">FCE38A<br>F38181</div>
+            </div>
+        </div>
+        <!-- Row 3 -->
+        <div class="row3">
+            <div class="C1">
+                <div class="k"></div>
+                <div class="k1">FCE38A<br>F38181</div>
+            </div>
+            <div class="C2">
+                <div class="l"></div>
+                <div class="l1">FCE38A<br>F38181</div>
+            </div>
+            <div class="C3">
+                <div class="m"></div>
+                <div class="m1">FCE38A<br>F38181</div>
+            </div>
+            <div class="C4">
+                <div class="n"></div>
+                <div class="n1">FCE38A<br>F38181</div>
+            </div>
+            <div class="C5">
+                <div class="o"></div>
+                <div class="o1">FCE38A<br>F38181</div>
+            </div>
+        </div>
+        <!-- Row 4 -->
+        <div class="row4">
+            <div class="D1">
+                <div class="p"></div>
+                <div class="p1">FCE38A<br>F38181</div>
+            </div>
+            <div class="D2">
+                <div class="q"></div>
+                <div class="q1">FCE38A<br>F38181</div>
+            </div>
+            <div class="D3">
+                <div class="r"></div>
+                <div class="r1">FCE38A<br>F38181</div>
+            </div>
+            <div class="D4">
+                <div class="s"></div>
+                <div class="s1">FCE38A<br>F38181</div>
+            </div>
+            <div class="D5">
+                <div class="t"></div>
+                <div class="t1">FCE38A<br>F38181</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
