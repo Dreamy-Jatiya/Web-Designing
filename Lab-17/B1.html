@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>College Essentials</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:linear-gradient(120deg,#f3f3f3,#f9e3e3);
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+}
+
+.container{
+width:900px;
+height:500px;
+background:white;
+display:flex;
+border-radius:10px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+overflow:hidden;
+}
+
+.left{
+width:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#fafafa;
+}
+
+.left img{
+width:80%;
+}
+
+.right{
+width:50%;
+padding:40px;
+}
+
+.category{
+color:gray;
+font-size:12px;
+letter-spacing:1px;
+}
+
+h1{
+margin:5px 0 10px;
+}
+
+.rating{
+color:#999;
+margin-bottom:20px;
+}
+
+.section{
+margin-bottom:20px;
+}
+
+.section p{
+margin-bottom:8px;
+font-weight:bold;
+}
+
+.btn{
+padding:8px 15px;
+border:1px solid #ddd;
+background:white;
+margin-right:8px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.btn:hover{
+background:#f3f3f3;
+}
+
+.active{
+background:#eee;
+}
+
+.color{
+width:20px;
+height:20px;
+border-radius:50%;
+display:inline-block;
+margin-right:10px;
+cursor:pointer;
+border:2px solid #eee;
+}
+
+.blue{background:#3ad1c8;}
+.black{background:#0f1631;}
+.grey{background:#ddd;}
+
+
+/* bottom bar */
+
+.bottom-bar{
+width:900px;
+background:white;
+margin-top:15px;
+padding:15px 20px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.product-info{
+display:flex;
+align-items:center;
+}
+
+.product-info img{
+width:40px;
+margin-right:10px;
+}
+
+.price{
+font-size:20px;
+font-weight:bold;
+}
+
+.cart-btn{
+background:#0b2b7a;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.cart-btn:hover{
+background:#061b4f;
+}
+</style>
+<body>
+
+<div class="container">
+
+    <!-- LEFT IMAGE SECTION -->
+    <div class="left">
+        <img src="./Screenshot (99).png" alt="product">
+    </div>
+
+
+    <!-- RIGHT DETAILS SECTION -->
+    <div class="right">
+
+        <h4 class="category">BEDROOM</h4>
+        <h1>College Essentials</h1>
+
+        <p class="rating">⭐⭐⭐⭐☆ 4.4 (328 reviews)</p>
+
+        <!-- QUALITY -->
+        <div class="section">
+            <p>Select Quality</p>
+            <button class="btn">Basic</button>
+            <button class="btn active">Premium</button>
+        </div>
+
+        <!-- STYLE -->
+        <div class="section">
+            <p>Style</p>
+            <button class="btn">Minimal</button>
+            <button class="btn">Bohemian</button>
+            <button class="btn">Floral</button>
+        </div>
+
+        <!-- COLOR -->
+        <div class="section">
+            <p>Color</p>
+            <div class="color blue"></div>
+            <div class="color black"></div>
+            <div class="color grey"></div>
+        </div>
+
+        <!-- SIZE -->
+        <div class="section">
+            <p>Size</p>
+            <button class="btn">Twin XL</button>
+            <button class="btn">Full</button>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- BOTTOM BAR -->
+<div class="bottom-bar">
+
+    <div class="product-info">
+        <img src="./Screenshot (99).png">
+        <div>
+            <h4>College Essentials</h4>
+            <p>Everything you need for freshman year</p>
+        </div>
+    </div>
+
+    <div class="price">$195</div>
+
+    <button class="cart-btn">Add to Cart</button>
+
+</div>
+
+</body>
+</html>
