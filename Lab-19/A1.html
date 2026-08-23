@@ -1,0 +1,115 @@
+<!--Create a design similar to Practical No-11 using the grid system of bootstrap. 
+    1. Layout part-A -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<style>
+
+body{
+    font-family: Arial;
+}
+
+.header{
+    padding:20px;
+}
+
+.nav-links a{
+    margin-left:20px;
+    text-decoration:none;
+}
+
+.hero{
+    background:white;
+    padding:40px;
+}
+
+.hero img{
+    width:100%;
+}
+
+.program-box{
+    border:2px solid red;
+    height:120px;
+    margin-top:20px;
+    text-align:center;
+    padding-top:10px;
+}
+
+</style>
+
+
+
+<body>
+
+
+<div class="container header" style="background-color: rgb(235, 174, 224);">
+    <div class="row">
+
+        <div class="col-md-6">
+            <h3>Darshan University</h3>
+        </div>
+
+        <div class="col-md-6 text-end nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">My Work</a>
+            <a href="#">Contact</a>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container hero">
+
+    <div class="row align-items-center">
+
+        <div class="col-md-6">
+            <img src="../image/Screenshot (100).png">
+        </div>
+
+        <div class="col-md-6">
+            <h3>Hello, I am Web Developer</h3>
+            <p>
+                I use HTML and CSS to convert webpage designs into
+                beautiful and efficient websites.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container" style="background-color:  rgb(235, 174, 224);">
+
+    <div class="row text-center">
+
+        <div class="col-md-3">
+            <div class="program-box">Program 1</div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="program-box">Program 2</div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="program-box">Program 3</div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="program-box">Program 4</div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
