@@ -1,0 +1,97 @@
+<!--  Design SIGN-IN form using Bootstrap.   -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+   <div class="container" style="height: 800px; border: 2px solid black; width: 800px;"><center>
+    <div class="h1">Covid-19 Registration</div></center>
+    <br>
+    <div class="row g-3 justify-content-center align-items-center">
+  <div class="col-auto">
+    <label for="text" class="col-form-label">Full Name</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" id="text" class="form-control" aria-describedby="passwordHelpInline">
+  </div>
+<br>
+<div class="row g-3 justify-content-center align-items-center">
+  <div class="col-auto">
+    <label for="text" class="col-form-label">Last Name</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" id="text" class="form-control" aria-describedby="passwordHelpInline">
+  </div>
+</div>
+<br><div class="row g-3 justify-content-center align-items-center">
+  <div class="col-auto">
+    <label for="number" class="col-form-label">Aadhaar Number</label>
+  </div>
+  <div class="col-auto">
+    <input type="number" id="number" class="form-control" aria-describedby="passwordHelpInline">
+  </div>
+</div>
+
+<br><div class="row g-3 justify-content-center align-items-center">
+  <div class="col-auto">
+    <label for="select" class="col-form-label">Vaccine Name</label>
+  </div>
+  <div class="col-auto">
+    <select id="select" class="form-select" aria-label="Default select example">
+  <option selected>Please select the vaccine Name</option>
+  <option value="1">Covishield</option>
+  <option value="2">Covaxin</option>
+    <option value="3">Sputnik V</option>
+    <option value="4">Moderna</option>  
+  </select>
+</div>
+</div>
+<br><div class="row g-3 justify-content-center align-items-center">
+  <div class="col-auto">
+    <label for="select" class="col-form-label">Vaccination Center</label>
+  </div>
+  <div class="col-auto">
+    <select id="select" class="form-select" aria-label="Default select example">
+  <option selected>Please select the vaccination center</option>
+  <option value="1">Center 1</option>
+  <option value="2">Center 2</option>
+    <option value="3">Center 3</option>
+    <option value="4">Center 4</option>  
+  </select>
+</div>
+</div>
+
+<br>
+<div class="row g-3 justify-content-center align-items-center">
+  <div class="col-auto">
+    <label for="datetime" class="col-form-label">Date of dose</label>
+  </div>
+  <div class="col-auto">
+    <input type="datetime-local" id="datetime" class="form-control" aria-describedby="passwordHelpInline">
+  </div>
+  <br>
+  <div class="row g-3 justify-content-center align-items-center">
+  <div class="col-auto">
+    <label for="doseNumber" class="col-form-label">Dose number</label>
+  </div>
+  <div class="col-auto">
+    <input type="number" id="doseNumber" class="form-control" aria-describedby="passwordHelpInline">
+  </div>
+  <br>
+
+<br>
+<div class="row g-3 justify-content-center">
+       <div class="col-12 text-center">
+        <input type="submit" value="Click Here" class="mx-1"><input type="reset" value="Cancel" class="mx-12">
+       </div>
+      </div>
+
+   </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
