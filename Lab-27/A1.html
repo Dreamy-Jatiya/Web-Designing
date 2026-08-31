@@ -1,0 +1,586 @@
+<!-- Design the webpage given below -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Dashboard</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background-color: #292c34;
+        font-family: Arial, sans-serif;
+        color: white;
+      }
+
+      /* Main Dashboard */
+      .dashboard {
+        width: 82%;
+        min-height: 575px;
+        margin: 85px auto;
+        background-color: #0f141c;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      /* Sidebar */
+      .sidebar {
+        background-color: #10151e;
+        min-height: 575px;
+        border-right: 1px solid #202630;
+      }
+
+      .logo {
+        height: 54px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding-left: 25px;
+        font-size: 13px;
+        font-weight: bold;
+      }
+
+      .logo-box {
+        width: 15px;
+        height: 15px;
+        border: 3px solid white;
+        border-radius: 3px;
+      }
+
+      .menu {
+        margin-top: 10px;
+      }
+
+      .menu-item {
+        height: 48px;
+        margin: 2px 0;
+        padding-left: 25px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: #b7bbc3;
+        font-size: 12px;
+        border-radius: 5px;
+      }
+
+      .menu-item:hover {
+        background-color: #202631;
+        color: white;
+      }
+
+      .menu-item.active {
+        background-color: #202631;
+        color: white;
+      }
+
+      .menu-item i {
+        font-size: 14px;
+      }
+
+      /* Right Side */
+      .main {
+        background-color: #10151e;
+      }
+
+      /* Top Navbar */
+      .topbar {
+        height: 54px;
+        background-color: #111720;
+        border-bottom: 1px solid #202630;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+      }
+
+      .search-box {
+        width: 180px;
+        height: 29px;
+        background-color: #1b222d;
+        border: none;
+        border-radius: 5px;
+        color: #999;
+        font-size: 10px;
+        padding: 0 12px;
+      }
+
+      .profile {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #777e8a;
+        font-size: 11px;
+      }
+
+      .profile-circle {
+        width: 31px;
+        height: 31px;
+        border-radius: 50%;
+        background-color: #282e38;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Dashboard Content */
+      .content {
+        padding: 21px 16px 10px;
+      }
+
+      /* Statistics */
+      .stat-card {
+        height: 68px;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+
+      .stat-card h3 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: normal;
+      }
+
+      .stat-card p {
+        margin: 3px 0 0;
+        font-size: 10px;
+      }
+
+      .users {
+        background-color: #28569d;
+      }
+
+      .revenue {
+        background-color: #247b73;
+      }
+
+      .orders {
+        background-color: #ed6e2b;
+      }
+
+      .visitors {
+        background-color: #c83e2d;
+      }
+
+      .failure {
+        background-color: #c83e2d;
+      }
+
+      .combined {
+        display: flex;
+        height: 68px;
+        border-radius: 6px;
+        overflow: hidden;
+      }
+
+      .combined .stat-card {
+        flex: 1;
+        border-right: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 0;
+      }
+
+      /* Panels */
+      .panel {
+        background-color: #171d26;
+        border-radius: 6px;
+        min-height: 175px;
+        padding: 15px 13px;
+      }
+
+      .panel h5 {
+        font-size: 14px;
+        margin-bottom: 15px;
+        color: white;
+      }
+
+      /* Chart */
+      .chart {
+        width: 100%;
+        height: 110px;
+      }
+
+      .months {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5px;
+        color: #626976;
+        font-size: 9px;
+      }
+
+      /* Activity */
+      .activity-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 13px;
+        color: #777e89;
+        font-size: 9px;
+      }
+
+      .activity-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #222a35;
+        flex-shrink: 0;
+      }
+
+      /* Sales Report */
+      .report-box {
+        height: 54px;
+        background-color: #1c232e;
+        border-radius: 5px;
+        margin-bottom: 12px;
+        padding: 16px;
+      }
+
+      .line {
+        height: 7px;
+        background-color: #252d39;
+        border-radius: 5px;
+        margin-bottom: 8px;
+      }
+
+      .line.small {
+        width: 55%;
+      }
+
+      .line.medium {
+        width: 75%;
+      }
+
+      /* Recent Activity Skeleton */
+      .skeleton {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 14px;
+      }
+
+      .skeleton-circle {
+        width: 12px;
+        height: 12px;
+        background-color: #222a35;
+        border-radius: 50%;
+      }
+
+      .skeleton-lines {
+        flex: 1;
+      }
+
+      .skeleton-line {
+        height: 6px;
+        background-color: #252c37;
+        border-radius: 5px;
+        margin-bottom: 7px;
+      }
+
+      .skeleton-line.short {
+        width: 55%;
+      }
+
+      /* Footer */
+      .footer {
+        text-align: center;
+        color: #777e88;
+        font-size: 9px;
+        margin-top: 15px;
+      }
+
+      @media (max-width: 900px) {
+        .dashboard {
+          width: 95%;
+          margin: 30px auto;
+        }
+
+        .sidebar {
+          min-height: auto;
+        }
+
+        .menu {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        .menu-item {
+          width: 50%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="dashboard">
+      <div class="row g-0">
+        <!-- ================= SIDEBAR ================= -->
+        <div class="col-md-3 sidebar">
+          <!-- Logo -->
+          <div class="logo">
+            <div class="logo-box"></div>
+            Dashbord
+          </div>
+
+          <!-- Menu -->
+          <div class="menu">
+            <div class="menu-item active">
+              <i class="bi bi-house-door-fill"></i>
+              Dashboard
+            </div>
+
+            <div class="menu-item">
+              <i class="bi bi-person-fill"></i>
+              Profile
+            </div>
+
+            <div class="menu-item">
+              <i class="bi bi-envelope-fill"></i>
+              Messages
+            </div>
+
+            <div class="menu-item">
+              <i class="bi bi-gear-fill"></i>
+              Settings
+            </div>
+
+            <div class="menu-item">
+              <i class="bi bi-pie-chart-fill"></i>
+              Logout
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= MAIN CONTENT ================= -->
+        <div class="col-md-9 main">
+          <!-- Top Navbar -->
+          <div class="topbar">
+            <input type="text" class="search-box" placeholder=" 🔍  Search.." />
+
+            <div class="profile">
+              <span>Profile loom</span>
+
+              <div class="profile-circle">
+                <i class="bi bi-person-fill"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dashboard Content -->
+          <div class="content">
+            <!-- ================= STATISTICS ================= -->
+            <div class="row g-3 mb-3">
+              <div class="col-6 col-lg-3">
+                <div class="stat-card users">
+                  <h3>204</h3>
+                  <p>Total Users</p>
+                </div>
+              </div>
+
+              <div class="col-6 col-lg-3">
+                <div class="stat-card revenue">
+                  <h3>26</h3>
+                  <p>Revenue</p>
+                </div>
+              </div>
+
+              <div class="col-6 col-lg-3">
+                <div class="stat-card orders">
+                  <h3>28</h3>
+                  <p>New Orders</p>
+                </div>
+              </div>
+
+              <div class="col-6 col-lg-3">
+                <div class="combined">
+                  <div class="stat-card visitors">
+                    <h3>46</h3>
+                    <p>Visitors</p>
+                  </div>
+
+                  <div class="stat-card failure">
+                    <h3>86</h3>
+                    <p>Failer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ================= FIRST ROW ================= -->
+            <div class="row g-3 mb-3">
+              <!-- Overview -->
+              <div class="col-lg-7">
+                <div class="panel">
+                  <h5>Overview</h5>
+
+                  <svg
+                    class="chart"
+                    viewBox="0 0 500 130"
+                    preserveAspectRatio="none"
+                  >
+                    <!-- Grid -->
+                    <line x1="0" y1="25" x2="500" y2="25" stroke="#202631" />
+
+                    <line x1="0" y1="60" x2="500" y2="60" stroke="#202631" />
+
+                    <line x1="0" y1="95" x2="500" y2="95" stroke="#202631" />
+
+                    <!-- Graph -->
+                    <polyline
+                      points="
+                    0,105
+                    25,95
+                    45,65
+                    70,55
+                    95,65
+                    120,90
+                    145,80
+                    170,60
+                    195,65
+                    220,55
+                    245,20
+                    270,10
+                    295,20
+                    320,50
+                    345,60
+                    370,35
+                    395,15
+                    420,40
+                    445,25
+                    470,45
+                    500,20"
+                      fill="none"
+                      stroke="#2862a8"
+                      stroke-width="4"
+                    />
+                  </svg>
+
+                  <div class="months">
+                    <span>Jan</span>
+                    <span>Feb</span>
+                    <span>Mar</span>
+                    <span>Apr</span>
+                    <span>May</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Recent Activity -->
+              <div class="col-lg-5">
+                <div class="panel">
+                  <h5>Recent Activity</h5>
+
+                  <div class="activity-item">
+                    <div class="activity-dot"></div>
+                    Bnooole manages refcrives
+                  </div>
+
+                  <div class="activity-item">
+                    <div class="activity-dot"></div>
+                    Boox call report aujew eve
+                  </div>
+
+                  <div class="activity-item">
+                    <div class="activity-dot"></div>
+                    Expense new using seidor
+                  </div>
+
+                  <div class="activity-item">
+                    <div class="activity-dot"></div>
+                    Canvst businesses at top-one-
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ================= SECOND ROW ================= -->
+            <div class="row g-3">
+              <!-- Sales Report -->
+              <div class="col-lg-7">
+                <div class="panel">
+                  <h5>Sales Report</h5>
+
+                  <div class="report-box">
+                    <div class="line medium"></div>
+                    <div class="line small"></div>
+                  </div>
+
+                  <div class="report-box">
+                    <div class="line medium"></div>
+                    <div class="line small"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Recent Activity -->
+              <div class="col-lg-5">
+                <div class="panel">
+                  <h5>Recent Activity</h5>
+
+                  <div class="skeleton">
+                    <div class="skeleton-circle"></div>
+
+                    <div class="skeleton-lines">
+                      <div class="skeleton-line"></div>
+                      <div class="skeleton-line short"></div>
+                    </div>
+                  </div>
+
+                  <div class="skeleton">
+                    <div class="skeleton-circle"></div>
+
+                    <div class="skeleton-lines">
+                      <div class="skeleton-line"></div>
+                      <div class="skeleton-line short"></div>
+                    </div>
+                  </div>
+
+                  <div class="skeleton">
+                    <div class="skeleton-circle"></div>
+
+                    <div class="skeleton-lines">
+                      <div class="skeleton-line"></div>
+                      <div class="skeleton-line short"></div>
+                    </div>
+                  </div>
+
+                  <div class="skeleton">
+                    <div class="skeleton-circle"></div>
+
+                    <div class="skeleton-lines">
+                      <div class="skeleton-line"></div>
+                      <div class="skeleton-line short"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">© 2024 Your Company</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

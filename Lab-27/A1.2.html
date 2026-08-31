@@ -1,0 +1,98 @@
+<!-- Design the webpage given below -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body class="bg-secondary-subtle">
+  <div class="container py-5">
+    <div class="row g-0 rounded-4 overflow-hidden shadow-lg" style="background:#0f172a; min-height:90vh;">
+      
+      <!-- Sidebar -->
+      <div class="col-md-2 p-4" style="background:#0b1220;">
+        <h5 class="text-white mb-4"><i class="bi bi-app me-2"></i>Dashboard</h5>
+        <div class="nav flex-column gap-2">
+          <a href="#" class="nav-link text-white bg-dark rounded">Dashboard</a>
+          <a href="#" class="nav-link text-light">Profile</a>
+          <a href="#" class="nav-link text-light">Messages</a>
+          <a href="#" class="nav-link text-light">Settings</a>
+          <a href="#" class="nav-link text-light">Logout</a>
+        </div>
+      </div>
+
+      <!-- Main -->
+      <div class="col-md-10 p-4">
+        <!-- Navbar -->
+        <div class="d-flex justify-content-between align-items-center rounded-4 p-3 mb-4" style="background:#111827;">
+          <div class="input-group w-50">
+            <span class="input-group-text bg-dark border-0 text-secondary"><i class="bi bi-search"></i></span>
+            <input type="text" class="form-control bg-dark border-0 text-white" placeholder="Search..">
+          </div>
+          <div class="text-white d-flex align-items-center gap-2">
+            <span>Profile ioom</span>
+            <i class="bi bi-person-circle fs-4"></i>
+          </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="row g-3 mb-4 text-center text-white">
+          <div class="col-md-3"><div class="bg-primary rounded-4 p-3">204<br><small>Total Users</small></div></div>
+          <div class="col-md-3"><div class="bg-success rounded-4 p-3">26<br><small>Revenue</small></div></div>
+          <div class="col-md-3"><div class="bg-warning rounded-4 p-3 text-dark">28<br><small>New Orders</small></div></div>
+          <div class="col-md-3"><div class="bg-danger rounded-4 p-3">46 / 86<br><small>Visitors / Failed</small></div></div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Overview -->
+          <div class="col-md-7">
+            <div class="p-4 rounded-4 text-white" style="background:#111827;">
+              <h4>Overview</h4>
+              <svg viewBox="0 0 500 180" class="w-100 mt-3" height="180">
+                <path d="M10 140 C60 80, 90 80, 130 120 S210 150, 250 90 S330 40, 370 95 S430 130, 490 70" 
+                      stroke="#2563eb" stroke-width="4" fill="none" stroke-linecap="round"/>
+              </svg>
+              <div class="d-flex justify-content-between text-secondary small mt-2">
+                <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Activity -->
+          <div class="col-md-5">
+            <div class="p-4 rounded-4 text-white h-100" style="background:#111827;">
+              <h4>Recent Activity</h4>
+              <p>• Manage reports</p>
+              <p>• Book call report</p>
+              <p>• Expand new using</p>
+              <p>• Top business activity</p>
+            </div>
+          </div>
+
+          <!-- Sales -->
+          <div class="col-md-7">
+            <div class="p-4 rounded-4 text-white" style="background:#111827;">
+              <h4>Sales Report</h4>
+              <div class="bg-dark rounded p-4 mt-3"></div>
+              <div class="bg-dark rounded p-4 mt-3"></div>
+            </div>
+          </div>
+
+          <!--<div class="col-md-5">
+            <div class="p-4 rounded-4 text-white" style="background:#111827;">
+              <h4>Recent Activity</h4>
+              <div class="bg-dark rounded p-5 mt-3"></div>
+            </div>
+          </div>
+        </div>-->
+
+        <p class="text-center text-secondary mt-4">© 2024 Your Company</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
